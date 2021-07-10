@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/69ce7a4e87.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
+
+    <title>Official Pyrepo</title>
+  </head>
+  <body>
+
+    <!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card w3-opacity" id="myNavbar">
+    
+    <!-- Middle navbar links -->
+    <nav class="w3-hide-small flex">
+	    <a href="#home" class="w3-bar-item w3-button w3-wide">PyRepo</a>
+      <!-- OPTIONAL <a href="#about" class="w3-bar-item w3-button">ABOUT</a> -->
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> Team</a>
+      <a href="pymix/" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-discord" aria-hidden="true"></i> PyMix</a>
+      <a href="pydex/" target="_blank" class="w3-bar-item w3-button"><i class="fas fa-book"></i> PyDex</a>
+      <a href="quickmath/" target="_blank" class="w3-bar-item w3-button"><i class="fa fa-calculator" aria-hidden="true"></i> QuickMath</a>
+      <a href="orio/" target="_blank" class="w3-bar-item w3-button w3-hide-small"><i class="fab fa-adobe"></i> Orio</a>
+      <a href="creator/" target="_blank" class="w3-bar-item w3-button"><i class="fas fa-desktop"></i> Creator</a>
+      <a href="ania.css" target="_blank" class="w3-bar-item w3-button"><i class="fab fa-css3-alt"></i> Ania </a>
+      <a href="https://github.com/PyKestrel/Pie.css" target="_blank" class="w3-bar-item w3-button"><i class="fab fa-css3-alt"></i> Pie </a>
+      <a href="privacy.html" target="_blank" class="w3-hover-text-red"> <p> Privacy Policy </a> </p> 
+    </nav>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-right w3-hide-medium w3-hide-large w3-center" style="display:none;right:0;" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close <i class="fa fa-times"></i> </a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Team</a>
+  <a href="pymix/" onclick="w3_close()" class="w3-bar-item w3-button">PyMix</a>
+  <a href="pydex/" onclick="w3_close()" class="w3-bar-item w3-button">PyDex</a>
+  <a href="quickmath/" onclick="w3_close()" class="w3-bar-item w3-button">QuickMath</a>
+  <a href="ania.css" onclick="w3_close()" class="w3-bar-item w3-button">Ania CSS</a>
+  <a href="https://github.com/PyKestrel/Pie.css" onclick="w3_close()" class="w3-bar-item w3-button">Pie CSS</a>
+  <a href="privacy.html" onclick="w3_close()" class="w3-bar-item w3-button"> Privacy Policy </a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min w3-hide-large" id="home">
+  <div class="w3-display-middle w3-text-white w3-content w3-center w3-block">
+    <span><img src="img/ThisIsPyRepo.svg" style="width:100%;"><span><br>
+    <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-hide-large w3-margin-top w3-opacity w3-hover-opacity-off fas fa-long-arrow-alt-down"></a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fab fa-github w3-hover-opacity"></i>
+  </div>
+</header>
+
+
+<!-- Scroll Animation For Big Screens -->
+<!-- <div class="intro w3-hide-small w3-hide-medium">
+  <h1></h1>
+  <video src="EditPyVid.mp4" id="home2"></video>
+</div> -->
+
+<!-- Scroll Animation For Big Screens -->
+<div class="w3-display-container w3-hide-small w3-hide-medium">
+  <div class="intro">
+    <h1></h1>
+    <video src="EditPyVid.mp4" id="home2"></video>
+  </div>
+</div>
+
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-third">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Motive</p>
+      <p>PyRepo Is A Project That Came About In 2018, With A Focus On Giving People The Easiest & Quickest Access To 
+	  Educational Resources & Tools Completely Free Of Charge.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>PyRepo And Its Libraries Of Many Textbooks And Documentation Is Availiable To Anyone Completely Free. 
+	  I Dont Believe Knowledge Should Have A Price Tag, So Thats Why PyRepo Is Dedicated To Helping The Individual User To 
+	  The Experienced Developer In Their Quest For Wanting To Learn More.</p>
+    </div>
+    <div class="w3-third">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Over The Years PyRepo Has Designed And Maintained Tools To Help People And Developers Alike Learn New Aspects Of 
+	  Computer Systems And Computer Science.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="team">
+  <h3 class="w3-center">THE TEAM</h3>
+  <div class="w3-row-padding w3-grayscale w3-content" style="margin-top:20px">
+  <!-- <p class="w3-center w3-large">The ones who runs this company</p> -->
+	<div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="img/Ariel.jpg" alt="Ariel" style="width:100%">
+        <div class="w3-container">
+          <h3>Ariel Torres</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="img/Nazmin.jpg" alt="Nazmin" style="width:100%">
+        <div class="w3-container">
+          <h3>Nazmin Islam</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l4 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="img/Richard2.jpg" alt="Richard" style="width:100%">
+        <div class="w3-container">
+          <h3>Richard Rivera</h3>
+          <p class="w3-opacity">Co-Founder</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p><button class="w3-button w3-light-grey w3-block"><i class="fa fa-envelope"></i> Contact</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home2" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <i class="fab fa-github w3-hover-opacity"></i>
+  </div>
+  <a href="privacy.html" title="Privacy Policy" target="_blank" class="w3-hover-text-red"> <p> Privacy Policy </a> </p> 
+</footer>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+
+</script>
+
+
+
+
+    <!-- <section>
+      <h1>Support Us</h1>
+    </section> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"
+      integrity="sha256-2p2tRZlPowp3P/04Pw2rqVCSbhyV/IB7ZEVUglrDS/c="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.js"
+      integrity="sha256-peenofh8a9TIqKdPKIeQE7mJvuwh+J0To7nslvpj1jI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.js"
+      integrity="sha256-31FC/OT6XpfjAhj9FuXjw5/wPXXawCAjJQ29E23/XPk="
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,134 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100%;
+	font-family: sans-serif;
+}
+
+.intro {
+	height: 100vh;
+}
+
+/* @media only screen and (max-width: 600px) {
+	.intro {
+		height: 0vh !important;
+		padding-bottom: 0 !important;
+		overflow-x: hidden;
+	}
+} */
+
+.intro video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.intro h1 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 80px;
+	color: white;
+}
+
+section {
+	height: 100vh;
+	color: black;
+}
+
+section h1 {
+	padding-top: 300px;
+	text-align: center;
+	font-size: 80px;
+}
+
+/*Copied From Other Folder*/
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Raleway", sans-serif;
+}
+
+body,
+html {
+	height: 100%;
+	line-height: 1.8;
+	scroll-behavior: smooth;
+}
+
+/* Full height image header */
+.bgimg-1 {
+	background-position: center;
+	background-size: cover;
+	background-image: url("img/bg.jpg");
+	min-height: 100%;
+	animation: Move 60s ease infinite alternate;
+}
+
+@keyframes Move {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 0% 100%;
+	}
+}
+
+.w3-bar .w3-button {
+	padding: 16px;
+}
+
+.flex {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+/* .sideFlex{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+} */
+
+/* width */
+::-webkit-scrollbar {
+	width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: RGBA(241, 241, 241, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	color: white;
+	transition: 0.7s;
+}
